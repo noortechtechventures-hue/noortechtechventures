@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noortech Techventures | Smart Security • Networking • Automation</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+<img src="Images_/noortech-logo.jpg.jpg" width="150">
+background:
+radial-gradient(circle at top right,
+rgba(13,110,253,.15),
+transparent 30%),
+
+radial-gradient(circle at bottom left,
+rgba(0,212,255,.1),
+transparent 40%),
+
+#07152b;
+
+color:#fff;
+overflow-x:hidden;
+}
+
+
+
+
+
+a{
+text-decoration:none;
+color:white;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+:root{
+--primary:#0d6efd;
+--secondary:#102542;
+--dark:#07152b;
+--light:#ffffff;
+--card:#102b52;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(7,21,43,0.95);
+backdrop-filter:blur(10px);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:20px;
+animation:floatLogo 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+@keyframes floatLogo{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links li{
+position:relative;
+}
+
+.nav-links a:hover{
+color:#4da3ff;
+}
+
+.dropdown{
+display:none;
+position:absolute;
+top:35px;
+left:0;
+background:#102542;
+min-width:230px;
+border-radius:8px;
+overflow:hidden;
+}
+
+.dropdown a{
+display:block;
+padding:12px;
+}
+
+.dropdown a:hover{
+background:#0d6efd;
+}
+
+.nav-links li:hover .dropdown{
+display:block;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1500&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+animation:fadeTitle 4s infinite;
+}
+
+@keyframes fadeTitle{
+0%{opacity:1;}
+50%{opacity:.3;}
+100%{opacity:1;}
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:50px;
+background:var(--primary);
+margin:5px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#4da3ff;
+}
+
+.filter-buttons{
+text-align:center;
+margin-bottom:30px;
+}
+
+.filter-buttons button{
+padding:10px 20px;
+margin:5px;
+border:none;
+border-radius:30px;
+background:#12335f;
+color:white;
+cursor:pointer;
+}
+
+.filter-buttons button:hover{
+background:#0d6efd;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:0 8px 30px rgba(0,0,0,.35);
+
+}
+
+
+
+
+
+
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+font-size:22px;
+color:#4da3ff;
+font-weight:bold;
+margin:10px 0;
+}
+
+.card-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.small-btn{
+padding:10px 15px;
+background:#0d6efd;
+border-radius:30px;
+font-size:14px;
+}
+
+.service-card{
+text-align:center;
+padding:30px;
+}
+
+.service-card i{
+font-size:50px;
+margin-bottom:20px;
+color:#4da3ff;
+}
+
+.about{
+line-height:1.8;
+font-size:18px;
+text-align:center;
+max-width:1000px;
+margin:auto;
+}
+
+.project-slider{
+overflow:hidden;
+white-space:nowrap;
+position:relative;
+}
+
+.slide-track{
+display:inline-flex;
+animation:scroll 30s linear infinite;
+}
+
+.project{
+width:350px;
+margin-right:20px;
+background:#102542;
+border-radius:15px;
+overflow:hidden;
+}
+
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
+
+.partner-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.partner-card{
+background:#102542;
+padding:30px;
+text-align:center;
+border-radius:15px;
+transition:.3s;
+}
+
+.partner-card:hover{
+background:#0d6efd;
+}
+
+.social-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.social-card{
+background:#102542;
+padding:20px;
+text-align:center;
+border-radius:15px;
+}
+
+.social-card i{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+}
+
+.contact-form button{
+width:100%;
+padding:15px;
+border:none;
+background:#0d6efd;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.footer{
+background:#04101f;
+padding:40px 8%;
+text-align:center;
+}
+.whatsapp-float{
+position:fixed;
+width:65px;
+height:65px;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+z-index:9999;
+box-shadow:0 5px 20px rgba(0,0,0,.4);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(37,211,102,.7);}
+70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
+100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+.footer-links{
+margin:20px 0;
+}
+
+.footer-links a{
+margin:0 10px;
+}
+
+@media(max-width:900px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#07152b;
+padding:20px;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.dropdown{
+position:static;
+display:none;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+
+<img
+src="Images_/noortech-logo.jpg.jpg"
+alt="Noortech Techventures"
+style="height:60px;">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<ul class="nav-links" id="menu">
+
+<li><a href="#home">Home</a></li>
+
+<li>
+<a href="#">Products ▼</a>
+
+<div class="dropdown">
+
+<a href="#products">CCTV Cameras</a>
+<a href="#products">Networking</a>
+<a href="#products">Access Control</a>
+<a href="#products">Biometric Systems</a>
+<a href="#products">Alarm Systems</a>
+<a href="#products">Electric Fence</a>
+<a href="#products">Starlink</a>
+<a href="#products">Solar Products</a>
+
+</div>
+</li>
+
+<li>
+
+<a href="#">Services ▼</a>
+
+<div class="dropdown">
+
+<a href="#services">CCTV Installation</a>
+<a href="#services">Network Installation</a>
+<a href="#services">Structured Cabling</a>
+<a href="#services">Access Control</a>
+<a href="#services">Biometric Systems</a>
+<a href="#services">VoIP Systems</a>
+<a href="#services">Alarm Systems</a>
+<a href="#services">Electric Fence</a>
+<a href="#services">Starlink Installation</a>
+<a href="#services">Solar Installation</a>
+
+</div>
+
+</li>
+
+<li><a href="#about">About Us</a></li>
+<li><a href="#partners">Partners</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<img
+src="images/noortech-logo.jpg"
+class="hero-logo">
+
+<h1>NOORTECH TECHVENTURES</h1>
+
+
+
+<p>Smart Security • Networking • Automation</p>
+
+<a href="#products" class="btn">
+View Products
+</a>
+
+<a href="https://wa.me/254780636387" class="btn">
+Request Quote
+</a>
+
+</div>
+
+</section>
+<!-- PRODUCTS SECTION -->
+
+<section id="products">
+
+<h2 class="section-title">
+Our Products
+</h2>
+
+<div class="filter-buttons">
+
+<button onclick="filterProducts('all')">
+All
+</button>
+
+<button onclick="filterProducts('cctv')">
+CCTV
+</button>
+
+<button onclick="filterProducts('network')">
+Networking
+</button>
+
+<button onclick="filterProducts('access')">
+Access Control
+</button>
+
+<button onclick="filterProducts('biometric')">
+Biometric
+</button>
+
+<button onclick="filterProducts('alarm')">
+Alarm
+</button>
+
+<button onclick="filterProducts('fence')">
+Electric Fence
+</button>
+
+<button onclick="filterProducts('starlink')">
+Starlink
+</button>
+
+<button onclick="filterProducts('solar')">
+Solar
+</button>
+
+</div>
+
+<div class="grid">
+
+<!-- PRODUCT 1 -->
+
+<div class="card product-card cctv">
+
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800" alt="CCTV Camera">
+
+<div class="card-content">
+
+<h3>2MP Hikvision Dome Camera</h3>
+
+<div class="price">
+KES 4,500
+</div>
+
+<p>
+High definition indoor surveillance camera with night vision.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20to%20buy%20the%202MP%20Hikvision%20Dome%20Camera">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Tell%20me%20more%20about%20the%202MP%20Hikvision%20Dome%20Camera">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="card product-card cctv">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+
+<div class="card-content">
+
+<h3>8 Channel DVR</h3>
+
+<div class="price">
+KES 12,500
+</div>
+
+<p>
+Reliable video recording system for CCTV surveillance.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20to%20buy%20the%208%20Channel%20DVR">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%208%20Channel%20DVR">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="card product-card network">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+
+<div class="card-content">
+
+<h3>24 Port Gigabit Switch</h3>
+
+<div class="price">
+KES 16,000
+</div>
+
+<p>
+Managed switch ideal for office networking infrastructure.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20to%20buy%20the%2024%20Port%20Gigabit%20Switch">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%2024%20Port%20Gigabit%20Switch">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="card product-card network">
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800">
+
+<div class="card-content">
+
+<h3>Cat6 Network Cable</h3>
+
+<div class="price">
+KES 18,500
+</div>
+
+<p>
+305 Meter box suitable for structured cabling installations.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20to%20buy%20Cat6%20Cable">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Cat6%20Cable">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="card product-card access">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800">
+
+<div class="card-content">
+
+<h3>RFID Access Control Kit</h3>
+
+<div class="price">
+KES 21,500
+</div>
+
+<p>
+Secure door access solution with RFID card authentication.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20RFID%20Access%20Control%20Kit">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20RFID%20Access%20Control%20Kit">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="card product-card biometric">
+
+<img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=800">
+
+<div class="card-content">
+
+<h3>ZKTeco Biometric Terminal</h3>
+
+<div class="price">
+KES 18,000
+</div>
+
+<p>
+Fingerprint attendance and access management solution.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20ZKTeco%20Biometric%20Terminal">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20ZKTeco%20Biometric%20Terminal">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="card product-card alarm">
+
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800">
+
+<div class="card-content">
+
+<h3>Wireless Alarm System</h3>
+
+<div class="price">
+KES 15,500
+</div>
+
+<p>
+Protect your home or business from intrusion threats.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20Wireless%20Alarm%20System">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Wireless%20Alarm%20System">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="card product-card fence">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800">
+
+<div class="card-content">
+
+<h3>Electric Fence Energizer</h3>
+
+<div class="price">
+KES 24,500
+</div>
+
+<p>
+Powerful perimeter security solution.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20Electric%20Fence%20Energizer">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Electric%20Fence%20Energizer">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 9 -->
+
+<div class="card product-card starlink">
+
+<img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800">
+
+<div class="card-content">
+
+<h3>Starlink Internet Kit</h3>
+
+<div class="price">
+Contact For Pricing
+</div>
+
+<p>
+High-speed satellite internet solution.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Starlink%20Internet%20Kit">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Starlink%20Internet%20Kit">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 10 -->
+
+<div class="card product-card solar">
+
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800">
+
+<div class="card-content">
+
+<h3>550W Solar Panel</h3>
+
+<div class="price">
+KES 8,500
+</div>
+
+<p>
+High-efficiency solar energy generation panel.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20550W%20Solar%20Panel">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20550W%20Solar%20Panel">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 11 -->
+
+<div class="card product-card solar">
+
+<img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800">
+
+<div class="card-content">
+
+<h3>Hybrid Solar Inverter</h3>
+
+<div class="price">
+KES 45,000
+</div>
+
+<p>
+Efficient inverter suitable for homes and businesses.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20Hybrid%20Solar%20Inverter">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Hybrid%20Solar%20Inverter">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 12 -->
+
+<div class="card product-card access">
+
+<img src="https://images.unsplash.com/photo-1516321310764-8d15f3f3c72c?w=800">
+
+<div class="card-content">
+
+<h3>Video Door Phone</h3>
+
+<div class="price">
+KES 22,000
+</div>
+
+<p>
+Monitor and communicate with visitors remotely.
+</p>
+
+<br>
+
+<div class="card-buttons">
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20want%20Video%20Door%20Phone">
+Buy Now
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Inquiry%20for%20Video%20Door%20Phone">
+WhatsApp Inquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- SERVICES SECTION -->
+
+<section id="services">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="grid">
+
+<div class="card service-card">
+
+<i class="fas fa-video"></i>
+
+<h3>CCTV Installation</h3>
+
+<p>
+Professional installation and configuration of CCTV surveillance systems for homes, offices, schools, warehouses and businesses.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20CCTV%20Installation%20Service">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20me%20a%20quotation%20for%20CCTV%20Installation">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-network-wired"></i>
+
+<h3>Network Installation</h3>
+
+<p>
+LAN, WAN and wireless networking solutions for offices, institutions and commercial buildings.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Network%20Installation">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20a%20quotation%20for%20Network%20Installation">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-plug"></i>
+
+<h3>Structured Cabling</h3>
+
+<p>
+Cat6, Cat6A and Fiber Optic structured cabling solutions for reliable communication networks.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Structured%20Cabling">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Structured%20Cabling">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-door-open"></i>
+
+<h3>Access Control Installation</h3>
+
+<p>
+Door access systems, magnetic locks, RFID and smart entry solutions.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Access%20Control%20Installation">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Access%20Control">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-fingerprint"></i>
+
+<h3>Biometric Attendance Systems</h3>
+
+<p>
+Employee attendance management and biometric authentication systems.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Biometric%20Attendance%20System">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Biometric%20System">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-phone-volume"></i>
+
+<h3>VoIP Systems</h3>
+
+<p>
+IP telephony systems for organizations seeking modern communication solutions.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20VoIP%20System">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20VoIP%20System">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-bell"></i>
+
+<h3>Alarm Systems</h3>
+
+<p>
+Intruder alarm systems and monitoring solutions for property protection.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Alarm%20System">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Alarm%20System">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-shield-halved"></i>
+
+<h3>Electric Fence Installation</h3>
+
+<p>
+Complete perimeter security systems for homes, institutions and commercial premises.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Electric%20Fence%20Installation">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Electric%20Fence">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-satellite-dish"></i>
+
+<h3>Starlink Installation</h3>
+
+<p>
+Professional Starlink installation and configuration services.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Starlink%20Installation">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Starlink%20Installation">
+Get Quote
+</a>
+
+</div>
+
+<div class="card service-card">
+
+<i class="fas fa-solar-panel"></i>
+
+<h3>Solar Installation</h3>
+
+<p>
+Design, supply and installation of solar power systems.
+</p>
+
+<br>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=I%20need%20Solar%20Installation">
+Request Service
+</a>
+
+<a class="small-btn"
+href="https://wa.me/254780636387?text=Please%20send%20quotation%20for%20Solar%20Installation">
+Get Quote
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<div class="about">
+
+<p>
+
+Noortech Techventures is a Kenyan technology company specializing in CCTV surveillance, networking, access control systems, biometric solutions, electric fencing, structured cabling, VoIP communication systems, Starlink internet solutions, and solar installations.
+
+</p>
+
+<br>
+
+<p>
+
+We provide reliable, scalable and cost-effective technology solutions tailored for homes, businesses, institutions and industrial environments throughout Kenya.
+
+</p>
+
+<br>
+
+<p>
+
+Our mission is to empower clients with innovative security, communication and automation solutions backed by professional support and technical excellence.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<h2 class="section-title">
+Why Choose Us
+</h2>
+
+<div class="grid">
+
+<div class="card service-card">
+<h2>100+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="card service-card">
+<h2>24/7</h2>
+<p>Technical Support</p>
+</div>
+
+<div class="card service-card">
+<h2>10+</h2>
+<p>Technology Solutions</p>
+</div>
+
+<div class="card service-card">
+<h2>99%</h2>
+<p>Customer Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+
+<h2 class="section-title">
+Projects Showcase
+</h2>
+
+<div class="project-slider">
+
+<div class="slide-track">
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=900">
+
+<div class="card-content">
+<h3>CCTV Deployment</h3>
+<p>Commercial surveillance system installation.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900">
+
+<div class="card-content">
+<h3>Network Infrastructure</h3>
+<p>Enterprise structured networking project.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900">
+
+<div class="card-content">
+<h3>Solar Installation</h3>
+<p>Renewable energy deployment project.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900">
+
+<div class="card-content">
+<h3>Access Control System</h3>
+<p>RFID and biometric access management.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900">
+
+<div class="card-content">
+<h3>Starlink Deployment</h3>
+<p>Satellite internet connectivity solution.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=900">
+
+<div class="card-content">
+<h3>CCTV Deployment</h3>
+<p>Commercial surveillance system installation.</p>
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900">
+
+<div class="card-content">
+<h3>Network Infrastructure</h3>
+<p>Enterprise structured networking project.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Commercial CCTV Project</h3>
+
+<p>
+Supply, installation and commissioning of surveillance systems for commercial premises.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Corporate Network Upgrade</h3>
+
+<p>
+Structured cabling, switching and wireless networking deployment.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Solar Energy System</h3>
+
+<p>
+Complete solar backup and energy management installation.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- PARTNERS SECTION -->
+
+<section id="partners">
+
+<h2 class="section-title">
+Our Partners
+</h2>
+
+<div class="partner-grid">
+
+<a href="https://sparcomsolutions.co.ke/" target="_blank">
+
+<div class="partner-card">
+<img
+src="images/sparcom-logo.png"
+style="height:80px;margin-bottom:20px;">
+<h3>Sparcom Solutions</h3>
+
+<p>
+Security, networking and ICT solutions partner.
+</p>
+
+</div>
+
+</a>
+
+<a href="https://sasire.com/" target="_blank">
+
+<div class="partner-card">
+<img
+src="images/Sasire-logo.png"
+style="height:80px;margin-bottom:20px;">
+<h3>Sasire Designs</h3>
+
+<p>
+Creative branding, web and design solutions.
+</p>
+
+</div>
+
+</a>
+
+<a href="https://www.mervonn.com/" target="_blank">
+
+<div class="partner-card">
+<img
+src="images/mervonn-logo.png"
+style="height:80px;margin-bottom:20px;">
+<h3>Mervon Technologies</h3>
+
+<p>
+Technology and enterprise systems integration partner.
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- SOCIAL MEDIA SECTION -->
+
+<section id="social">
+
+<h2 class="section-title">
+Connect With Us
+</h2>
+
+<div class="social-grid">
+
+<a href="https://www.facebook.com/share/17ovpUVc1A/" target="_blank">
+
+<div class="social-card">
+
+<i class="fab fa-facebook"></i>
+
+<h3>Facebook</h3>
+
+</div>
+
+</a>
+
+<a href="https://www.instagram.com/noortech_techventures" target="_blank">
+
+<div class="social-card">
+
+<i class="fab fa-instagram"></i>
+
+<h3>Instagram</h3>
+
+</div>
+
+</a>
+
+<a href="https://www.threads.com/@noortech_techventures" target="_blank">
+
+<div class="social-card">
+
+<i class="fab fa-threads"></i>
+
+<h3>Threads</h3>
+
+</div>
+
+</a>
+
+<a href="https://www.tiktok.com/@noortech_techventures" target="_blank">
+
+<div class="social-card">
+
+<i class="fab fa-tiktok"></i>
+
+<h3>TikTok</h3>
+
+</div>
+
+</a>
+
+<a href="https://x.com/Noortech" target="_blank">
+
+<div class="social-card">
+
+<i class="fab fa-x-twitter"></i>
+
+<h3>X</h3>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section>
+
+<div class="card"
+style="padding:60px;text-align:center;">
+
+<h2>
+Ready To Secure & Automate Your Business?
+</h2>
+
+<br>
+
+<a
+href="https://wa.me/254780636387"
+class="btn">
+
+Talk To An Expert
+
+</a>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="contact-wrapper">
+
+<div>
+
+<h3>
+Get In Touch
+</h3>
+
+<br>
+
+<p>
+<i class="fas fa-phone"></i>
++254 795 660 291
+</p>
+
+<br>
+
+<p>
+<i class="fab fa-whatsapp"></i>
++254 780 636 387
+</p>
+
+<br>
+
+<p>
+<i class="fas fa-envelope"></i>
+noortechtechventures@gmail.com
+</p>
+
+<br>
+
+<p>
+<i class="fas fa-location-dot"></i>
+Nairobi, Kenya
+</p>
+
+</div>
+
+<div>
+
+<form class="contact-form" onsubmit="sendQuote(event)">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<textarea
+id="message"
+rows="6"
+placeholder="Tell us about your project..."
+required></textarea>
+
+<button type="submit">
+Request Quote
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<h2>
+NOORTECH TECHVENTURES
+</h2>
+
+<p>
+Smart Security • Networking • Automation
+</p>
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#services">Services</a>
+
+<a href="#about">About</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div style="font-size:25px;">
+
+<a href="https://www.facebook.com/share/17ovpUVc1A/" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+&nbsp;&nbsp;
+
+<a href="https://www.instagram.com/noortech_techventures" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+&nbsp;&nbsp;
+
+<a href="https://www.tiktok.com/@noortech_techventures" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+
+&nbsp;&nbsp;
+
+<a href="https://x.com/Noortech" target="_blank">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+</div>
+
+<br>
+
+<p>
+Copyright © 2026 Noortech Techventures. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("menu")
+.classList
+.toggle("active");
+
+}
+
+function filterProducts(category){
+
+let cards =
+document.querySelectorAll(".product-card");
+
+cards.forEach(card=>{
+
+if(category==="all"){
+
+card.style.display="block";
+
+}
+
+else{
+
+if(card.classList.contains(category)){
+
+card.style.display="block";
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+}
+
+});
+
+}
+
+function sendQuote(e){
+
+e.preventDefault();
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let email =
+document.getElementById("email").value;
+
+let message =
+document.getElementById("message").value;
+
+let whatsappMessage =
+`NOORTECH TECHVENTURES QUOTE REQUEST
+
+Name: ${name}
+
+Phone: ${phone}
+
+Email: ${email}
+
+Project Details:
+${message}`;
+
+let url =
+"https://wa.me/254780636387?text="
++
+encodeURIComponent(whatsappMessage);
+
+window.open(url,'_blank');
+
+}
+
+</script>
+
+<a
+href="https://wa.me/254780636387"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+</body>
+</html>
